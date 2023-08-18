@@ -44,7 +44,7 @@ export function MemoItem({ memo }: MemoItemProps) {
       </CardContent>
 
       <CardFooter className='grid gap-2 p-4'>
-        <p className='flex items-center gap-2 text-sm text-muted-foreground'>
+        <p className='flex items-center gap-1 text-sm text-muted-foreground'>
           <Icons.calendar className='h-4 w-4' />
           <span>
             Mis à jour le{' '}

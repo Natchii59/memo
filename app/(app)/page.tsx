@@ -23,7 +23,7 @@ export default async function Home() {
     ['memos-user'],
     {
       tags: ['memos-user'],
-      revalidate: 60
+      revalidate: 10
     }
   )(currentUser.id)
 

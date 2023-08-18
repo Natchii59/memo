@@ -32,10 +32,24 @@ export function MemoContainerPage({ memo }: MemoContainerPageProps) {
 
   return (
     <div className='grid gap-4'>
-      <div className='flex min-w-0 flex-col items-center gap-2 sm:flex-row'>
-        <h1 className='w-full min-w-0 flex-auto break-words text-center font-heading text-3xl sm:text-left'>
-          {memo.title}
-        </h1>
+      <div className='flex min-w-0 flex-col items-center gap-4 sm:flex-row'>
+        <div className='w-full min-w-0 flex-auto self-start break-words'>
+          <h1 className='font-heading text-2xl sm:text-3xl'>{memo.title}</h1>
+          <p className='flex items-center gap-1 text-sm text-muted-foreground'>
+            <Icons.calendar className='h-4 w-4' />
+            <span>
+              Mis à jour le{' '}
+              {new Date(memo.updatedAt).toLocaleDateString('fr-FR', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric'
+              })}
+            </span>
+          </p>
+        </div>
 
         <div className='grid w-full grid-cols-2 gap-2 sm:w-auto sm:shrink-0'>
           <Link
