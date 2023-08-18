@@ -2,7 +2,7 @@ import { SiteConfig } from '@/types'
 
 export const siteConfig: SiteConfig = {
   name: 'Memo',
-  description: "It's a website to store your memo",
+  description: 'Ici tu peux écrire tous tes mémos !',
   url: 'https://memo.natchi.fr',
   links: {
     twitter: 'https://twitter.com/Natchi59',

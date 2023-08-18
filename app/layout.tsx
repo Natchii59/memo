@@ -45,7 +45,23 @@ export const metadata: Metadata = {
     initialScale: 1,
     userScalable: false
   },
-  themeColor: 'var(--background)'
+  themeColor: 'var(--background)',
+  twitter: {
+    title: {
+      default: siteConfig.name,
+      template: `%s | ${siteConfig.name}`
+    },
+    description: siteConfig.description,
+    card: 'summary'
+  },
+  openGraph: {
+    title: {
+      default: siteConfig.name,
+      template: `%s | ${siteConfig.name}`
+    },
+    description: siteConfig.description,
+    url: siteConfig.url
+  }
 }
 
 export default function RootLayout({ children }: React.PropsWithChildren) {
