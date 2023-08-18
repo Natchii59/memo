@@ -1,0 +1,64 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all
+        padding="0"
+        font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
+      />
+      <mj-body background-color="#fafafa" />
+      <mj-divider border-width="1px" border-color="#d4d4d8" />
+      <mj-section padding="20px" />
+      <mj-button
+        background-color="#09090b"
+        color="#fafafa"
+        font-size="12px"
+        font-weight="500"
+        border-radius="0.35rem"
+      />
+      <mj-text font-size="14px" line-height="24px" color="#09090b" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          src="https://react-email-demo-ijnnx5hul-resend.vercel.app/static/vercel-logo.png"
+          alt="Vercel"
+          width="40px"
+          height="40px"
+        />
+        <mj-text
+          font-size="24px"
+          font-weight="400"
+          padding="24px 0"
+          align="center"
+        >
+          Se connecter à <strong>Memo</strong>
+        </mj-text>
+        <mj-text>Salut 👋,</mj-text>
+        <mj-text padding="8px 0">
+          Vous recevez cet email car vous (ou quelqu'un d'autre) avez demandé un
+          lien de connexion pour votre compte.
+        </mj-text>
+        <mj-text padding-bottom="8px">
+          Ce lien expirera dans 1 heure.
+        </mj-text>
+        <mj-button href="{{signin_url}}" align="center" padding="12px 0">
+          Se connecter avec un lien magique
+        </mj-button>
+        <mj-text padding="8px 0 16px 0">
+          La confirmation de cette demande vous connectera en toute sécurité.
+        </mj-text>
+        <mj-divider />
+        <mj-text color="#a1a1aa" font-size="12px" padding="16px 0">
+          Si vous ne pouvez pas cliquer sur le bouton ou ne le voyez pas correctement, vous pouvez copier et coller le lien complet ci-dessous dans votre navigateur:
+          <a
+            href="{{signin_url}}"
+            style="color: rgb(37, 99, 235); text-decoration: none"
+            >{{signin_url}}</a
+          >
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

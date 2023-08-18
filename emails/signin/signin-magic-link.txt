@@ -1,0 +1,18 @@
+SE CONNECTER À MEMO
+
+Salut 👋,
+
+Vous recevez cet email car vous (ou quelqu'un d'autre) a demandé un lien de
+connexion pour votre compte.
+
+Ce lien expirera dans 1 heure.
+
+Se connecter avec un lien magique [{{signin_url}}]
+
+La confirmation de cette demande vous connectera en toute sécurité.
+
+--------------------------------------------------------------------------------
+
+Si vous ne pouvez pas cliquer sur le bouton ou ne le voyez pas correctement,
+vous pouvez copier et coller le lien complet ci-dessous dans votre navigateur:
+{{signin_url}}
