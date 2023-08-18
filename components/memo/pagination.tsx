@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Memo } from '@prisma/client'
 
 import { Icons } from '../icons'
@@ -13,6 +13,10 @@ interface MemosPaginationProps {
 
 export function MemosPagination({ baseMemos }: MemosPaginationProps) {
   const [memos, setMemos] = useState<Memo[]>(baseMemos)
+
+  useEffect(() => {
+    setMemos(baseMemos)
+  }, [baseMemos])
 
   return (
     <>
